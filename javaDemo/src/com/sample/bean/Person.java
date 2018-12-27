@@ -13,4 +13,12 @@ public class Person {
     public Person(String name) {
         this.name = name;
     }
+
+    private Person(Integer age) {
+        this.age = age;
+    }
+
+    public void showAge() {
+        System.out.println(this.age);
+    }
 }

@@ -60,4 +60,14 @@
    Person p3 = (Person)constructor.newInstance("tom");
    ```
 
-   **看到54分33秒**
+5. 通过getDeclaredConstructor来获得对象的所有（公共+私有）属性或方法
+
+   ```java
+   Constructor constructor2 = class4.getDeclaredConstructor(Integer.class);
+   constructor2.setAccessible(true);
+   Person p4 = (Person)constructor2.newInstance(12);
+   ```
+
+6. 通过反射来使用类里面的成员
+
+   ![1545719028629](assets/1545719028629.png)
